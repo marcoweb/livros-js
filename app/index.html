@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Exemplo</title>
-  </head>
-  <body>
-      <h1>Olá Mundo!!!</h1>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Livros</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Livros</h1>
+            <form>
+                <label class="form-label" for="titulo">Título</label>
+                <input class="form-control" name="titulo" id="titulo" type="text" />
+                <label class="form-label" for="genero">Gênero</label>
+                <input class="form-control" name="genero" id="genero" type="text" />
+                <br />
+                <button class="btn btn-primary" type="button" name="btnSalvar" id="btnSalvar">Salvar</button>
+            </form>
+            <hr />
+            <table id="tblLivros" class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Título</th>
+                        <th>Gênero</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <script src="./js/livros.js"></script>
+    </body>
 </html>
